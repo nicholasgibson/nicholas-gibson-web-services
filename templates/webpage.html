@@ -1,0 +1,73 @@
+$def with (deals)
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<table style="width:100%" border = "1">
+<tr> 
+    <td>
+        <b> Title</b>
+    </td>
+    <td>
+        <b> Description</b>
+    </td>
+    <td>
+        <b> Price</b>
+    </td>
+    <td>
+        <b> Competitors Price</b>
+    </td>
+    <td>
+        <b> Price Difference</b>
+    </td>
+    <td>
+        <b> HUKD Temperature</b>
+    </td>
+    <td>
+        <b> HUKD Link </b>
+    </td>
+    <td>
+        <b> Argos Link </b>
+    </td>
+    <td>
+        <b> Image </b>
+    </td>
+                
+</tr>
+   
+$for deal in deals:
+    <tr>
+        <td>
+                $deal["title"]
+        </td> 
+        <td>
+                $deal["description"]
+        </td>           
+        <td>
+                £$deal["price"]
+        </td>   
+        <td>
+                £$deal["competitorsPrice"]
+        </td>   
+        <td>
+                £$deal["priceDifferenceDescription"]
+        </td>   
+        <td>
+                $deal["temperature"]
+        </td>   
+        <td>
+                <a href= $deal["deal_link"] >Link</a>
+        </td>   
+        <td>
+                <a href= $deal["argosUrl"] >Link</a>
+        </td>   
+        <td>
+               <img src=$deal["deal_image"] alt="Deal Image" >
+        </td>   
+        
+    </tr>
+</table>
+
+</body>
+</html>
