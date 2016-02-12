@@ -23,5 +23,7 @@ from the command line.
 
 The server should now be running. In your web browser (tested on Internet explorer, chrome and firefox) visit http://localhost:8080/json to see the json service and http://localhost:8080/table to see a webpage displaying the results in a visual format.
 
-
+![alt tag](https://raw.githubusercontent.com/nicholasgibson/nicholas-gibson-web-services/master/table.png)
+<br><br>
+![alt tag](https://raw.githubusercontent.com/nicholasgibson/nicholas-gibson-web-services/master/json.png)
 
